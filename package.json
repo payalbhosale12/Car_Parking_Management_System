@@ -9,10 +9,9 @@
   "dev": "vite",
   "server": "nodemon ./server/server.js",
   "start": "node ./server/server.js",
-  "build": "vite"
-},
-
-
+  "build": "vite build"
+}
+,
 
 
   "dependencies": {
