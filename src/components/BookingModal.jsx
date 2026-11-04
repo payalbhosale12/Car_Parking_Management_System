@@ -67,7 +67,7 @@ const BookingModal = ({ plot, onClose, onBookingSuccess }) => {
             }
 
             const response = await axios.post(
-                'http://localhost:2025/api/bookings/create',
+                'http://localhost:5000/api/bookings/create',
                 {
                     parkingLotId: plot._id,
                     vehicleNumber: vehicleNumber.toUpperCase(),

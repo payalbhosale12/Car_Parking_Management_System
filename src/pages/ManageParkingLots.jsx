@@ -28,7 +28,7 @@ const ManageParkingLots=({userDetails})=>{
         }
 
         try{
-            const response = await axios.post('http://localhost:2025/api/parklots/registerlot',{
+            const response = await axios.post('http://localhost:5000/api/parklots/registerlot',{
                 email:email,
                 parkingLotName: username, 
                 parkingLotLocation: parkingLotLocation,
@@ -64,7 +64,7 @@ const ManageParkingLots=({userDetails})=>{
             
             setLoading(true);
             try {
-                const response = await axios.post('http://localhost:2025/api/parklots/getlots', {
+                const response = await axios.post('http://localhost:5000/api/parklots/getlots', {
                     email: email,
                 });
                 setPlotDetails(response.data.lots || []);

@@ -14,7 +14,7 @@ const Plots = ()=>{
 
     const fetchPlot = async ()=>{
         try{
-            const response = await axios.get(`http://localhost:2025/api/parklots/plots/${id}`);
+            const response = await axios.get(`http://localhost:5000/api/parklots/plots/${id}`);
             setPlot(response.data.plot);
         } catch(err){
             setError(err.response?.data?.message || "ERROR FINDING PLOT");

@@ -26,7 +26,7 @@ const Profile = ({userDetails})=>{
                 
                 if (role === 'User') {
                     // Fetch user bookings
-                    const response = await axios.get('http://localhost:2025/api/bookings/my-bookings', {
+                    const response = await axios.get('http://localhost:5000/api/bookings/my-bookings', {
                         headers: { Authorization: `Bearer ${token}` }
                     });
                     const bookings = response.data.bookings || [];
@@ -44,8 +44,8 @@ const Profile = ({userDetails})=>{
                 } else if (role === 'Admin') {
                     // Fetch admin parking lots and bookings
                     const [lotsResponse, bookingsResponse] = await Promise.all([
-                        axios.post('http://localhost:2025/api/parklots/getlots', { email }),
-                        axios.get('http://localhost:2025/api/bookings/all', {
+                        axios.post('http://localhost:5000/api/parklots/getlots', { email }),
+                        axios.get('http://localhost:5000/api/bookings/all', {
                             headers: { Authorization: `Bearer ${token}` }
                         })
                     ]);

@@ -21,7 +21,7 @@ const DashboardAdmin = ({adminDetails}) =>{
             if (!email) return;
             
             try {
-                const response = await axios.post('http://localhost:2025/api/parklots/getlots', {
+                const response = await axios.post('http://localhost:5000/api/parklots/getlots', {
                     email: email,
                 });
                 setPlotDetails(response.data.lots || []);
@@ -33,7 +33,7 @@ const DashboardAdmin = ({adminDetails}) =>{
         const fetchAllBookings = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.get('http://localhost:2025/api/bookings/all', {
+                const response = await axios.get('http://localhost:5000/api/bookings/all', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }

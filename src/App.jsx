@@ -31,7 +31,7 @@ export default function App(){
         const fetchUserDetails = async () => {
             if (token) {
                 try {
-                    const response = await axios.get(`http://localhost:2025/api/tokenverify`, {
+                    const response = await axios.get(`http://localhost:5000/api/tokenverify`, {
                         headers: {
                             Authorization: `Bearer ${token}`,
                         },

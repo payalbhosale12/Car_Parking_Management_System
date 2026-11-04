@@ -15,7 +15,7 @@ const PlotCards = ({plotDetails}) =>{
     useEffect(()=>{
         const fetchUserDetails = async ()=>{
             if(token){
-                const res = await axios.get('http://localhost:2025/api/auth/getdetails',{
+                const res = await axios.get('http://localhost:5000/api/auth/getdetails',{
                     headers:{
                         Authorization: `Bearer ${token}`,
                     },
