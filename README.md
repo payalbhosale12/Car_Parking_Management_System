@@ -1,5 +1,8 @@
-## 🚗 Car Parking System
+# Smart Car Parking Management System
 
+🚀 **Live Demo:** [Click here to visit the website](https://car-parking-management-system-silk.vercel.app)
+
+💻 **GitHub Repository:** https://github.com/payalbhosale12/Car_Parking_Management_System
 ## 🌟 Overview
 
 The **Smart Car Parking System** is a comprehensive web application designed to modernize parking management. It provides real-time parking availability tracking, automated booking management with timestamp-based status updates, and detailed analytics for both users and administrators.
@@ -142,7 +145,6 @@ Built with the MERN stack (MongoDB, Express.js, React.js, Node.js), this system 
 
 ## 🎯 Future Enhancements
 
-- [ ] **Payment Gateway Integration** - Stripe/PayPal integration
 - [ ] **Email Notifications** - Booking confirmations and reminders
 - [ ] **SMS Alerts** - Real-time booking updates
 - [ ] **QR Code Generation** - Digital parking passes
