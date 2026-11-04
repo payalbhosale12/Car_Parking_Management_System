@@ -16,7 +16,7 @@ const MyBookings = () => {
                 return;
             }
 
-            const response = await axios.get('http://localhost:5000/api/bookings/my-bookings', {
+            const response = await axios.get('/api/bookings/my-bookings', {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -43,7 +43,7 @@ const MyBookings = () => {
         try {
             const token = localStorage.getItem('token');
             const response = await axios.put(
-                `http://localhost:5000/api/bookings/cancel/${bookingId}`,
+                `/api/bookings/cancel/${bookingId}`,
                 {},
                 {
                     headers: {

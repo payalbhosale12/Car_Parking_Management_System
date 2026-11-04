@@ -23,7 +23,7 @@ const DashboardUser = ({userDetails}) =>{
                     return;
                 }
 
-                const response = await axios.get('http://localhost:5000/api/bookings/my-bookings', {
+                const response = await axios.get('/api/bookings/my-bookings', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

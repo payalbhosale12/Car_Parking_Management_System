@@ -10,7 +10,7 @@ const Home = () =>{
     useEffect(()=>{
         const fetch4Doc = async ()=>{
             try{
-                const response = await axios.get('http://localhost:5000/api/parklots/doc3');
+                const response = await axios.get('/api/parklots/doc3');
                 setResults(response.data.lots || []);
 
             } catch(err){

@@ -33,7 +33,7 @@ const DashboardAdmin = ({adminDetails}) =>{
         const fetchAllBookings = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.get('http://localhost:5000/api/bookings/all', {
+                const response = await axios.get('/api/bookings/all', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
