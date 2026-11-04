@@ -41,7 +41,7 @@ const Bookings = () =>{
     const fetchResults = async (searchArea)=>{
         try{
             setLoading(true);
-            const response = await axios.post('http://localhost:5000/api/parklots/search', {
+            const response = await axios.post('/api/parklots/search', {
                 q: searchArea,
             });
 
