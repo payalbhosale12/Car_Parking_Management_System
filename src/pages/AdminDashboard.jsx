@@ -21,7 +21,7 @@ const DashboardAdmin = ({adminDetails}) =>{
             if (!email) return;
             
             try {
-                const response = await axios.post('http://localhost:5000/api/parklots/getlots', {
+                const response = await axios.post('/api/parklots/getlots', {
                     email: email,
                 });
                 setPlotDetails(response.data.lots || []);
